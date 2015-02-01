@@ -5,7 +5,7 @@ license           'Apache 2.0'
 description       'Installs Oracle Database XE.'
 version           '0.1.0'
 
-%w{ centos }.each do |os|
+%w{ centos rhel windows }.each do |os|
   supports os
 end
 
