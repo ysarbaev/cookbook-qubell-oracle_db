@@ -9,6 +9,8 @@ version           '0.1.0'
   supports os
 end
 
-%w{ swap }.each do |cb|
-  depends cb
-end
+case node[:platform_family]
+  when "linux"
+    %w{ swap }.each do |cb|
+      depends cb
+    end
